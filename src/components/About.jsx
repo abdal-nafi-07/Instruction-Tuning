@@ -1,0 +1,6 @@
+const cards = [['Objective', 'To demonstrate how instruction tuning helps language models understand and follow natural language instructions.'], ['Technology Used', 'React, Vite, JavaScript, and Tailwind CSS are used to build this interactive web application.'], ['Project Scope', 'This project is an educational simulation designed to demonstrate the concept of instruction tuning. It does not train or fine-tune an actual Large Language Model.']]
+
+function About() {
+  return <section id="about" className="scroll-mt-20 border-t border-slate-200 bg-white py-20"><div className="mx-auto max-w-6xl px-5 md:px-8"><div className="mb-10"><p className="mb-3 text-xs font-bold uppercase tracking-[.22em] text-indigo-600">Project notes / 06</p><h2 className="text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">About the Project</h2></div><div className="grid gap-5 md:grid-cols-3">{cards.map(([title, description]) => <article key={title} className="border-l-2 border-indigo-500 bg-[#f7f8fc] p-6"><h3 className="text-xl font-bold text-slate-900">{title}</h3><p className="mt-4 text-sm leading-7 text-slate-500">{description}</p></article>)}</div></div></section>
+}
+export default About
